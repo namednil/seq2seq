@@ -1,6 +1,7 @@
 [![CircleCI](https://circleci.com/gh/google/seq2seq.svg?style=svg)](https://circleci.com/gh/google/seq2seq)
 
 ---
+This is a fork of Google's seq2seq model to be used in conjunction with our ![neural AMR parser](https://github.com/ginesam/neuralamr-17). We don't want the copy mechanism to copy dependency labels.
 
 **[READ THE DOCUMENTATION](https://google.github.io/seq2seq)**
 
