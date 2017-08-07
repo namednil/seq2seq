@@ -57,37 +57,94 @@ def _get_unk_mapping(filename):
   return mapping
 
 
+def mod_argmax(source,scores,regex):
+
+    """Returns index with highest score but considers only indices whose token does NOT match regex"""
+
+    def generator():
+
+        for i,(tok, score) in enumerate(zip(source, scores)):
+
+            if not regex.match(tok):
+
+                yield score,i
+
+    return max(generator(), key=lambda x: x[0])[1]
+
+
+
+
+
+re_ignore = re.compile("\)?--[a-z]+--\(?")
+
+
+
 def _unk_replace(source_tokens,
+
                  predicted_tokens,
+
                  attention_scores,
+
                  mapping=None):
+
   """Replaces UNK tokens with tokens from the source or a
+
   provided mapping based on the attention scores.
 
+
+
   Args:
+
     source_tokens: A numpy array of strings.
+
     predicted_tokens: A numpy array of strings.
+
     attention_scores: A numeric numpy array
+
       of shape `[prediction_length, source_length]` that contains
+
       the attention scores.
+
     mapping: If not provided, an UNK token is replaced with the
+
       source token that has the highest attention score. If provided
+
       the token is insead replaced with `mapping[chosen_source_token]`.
 
+
+
   Returns:
+
     A new `predicted_tokens` array.
+
   """
+
   result = []
+
   for token, scores in zip(predicted_tokens, attention_scores):
+
     if token == "UNK":
-      max_score_index = np.argmax(scores)
+
+      #max_score_index = np.argmax(scores)
+
+      max_score_index = mod_argmax(source_tokens,scores,re_ignore)
+
       chosen_source_token = source_tokens[max_score_index]
-      new_target = chosen_source_token
+
+      new_target = '__copied__'+chosen_source_token
+
+      #print("new_target:",new_target)
+
       if mapping is not None and chosen_source_token in mapping:
+
         new_target = mapping[chosen_source_token]
+
       result.append(new_target)
+
     else:
+
       result.append(token)
+
   return np.array(result)
 
 
