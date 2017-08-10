@@ -30,7 +30,7 @@ from tensorflow import gfile
 
 from seq2seq.tasks.inference_task import InferenceTask, unbatch_dict
 
-import nltk.stem.porter
+import nltk.stem.wordnet
 import re
 
 #regex for ignoring non-word AMR tokens in the copying mechanism
@@ -89,14 +89,14 @@ def _unk_replace(source_tokens,
   Returns:
     A new `predicted_tokens` array.
   """
-  ps = nltk.stem.porter.PorterStemmer()
+  ps = nltk.stem.wordnet.WordNetLemmatizer()
   result = []
   for token, scores in zip(predicted_tokens, attention_scores):
     if token == "UNK":
       #max_score_index = np.argmax(scores)
       max_score_index = mod_argmax(source_tokens,scores,RE_IGNORE)
       chosen_source_token = source_tokens[max_score_index]
-      new_target = ps.stem(chosen_source_token)+"-0" #hack to automaticall use sense 0
+      new_target = ps.lemmatize(chosen_source_token)+"-0" #hack to automaticall use sense 0
       print("new_target:",new_target)
       if mapping is not None and chosen_source_token in mapping:
         new_target = mapping[chosen_source_token]
