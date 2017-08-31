@@ -54,7 +54,7 @@ def get_wordnet_pos(treebank_tag):
     else:
         return ''
 def wordnettagg(wordlist):
-    tags = postag(wordlist)
+    tags = pos_tag(wordlist)
     for w,tag in tags:
         yield get_wordnet_pos(tag)
 
