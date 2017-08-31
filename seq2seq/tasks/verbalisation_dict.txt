@@ -1,0 +1,575 @@
+abusive	abuse-01
+acceptable	accept-01
+aching	ache-01
+accumulative	accumulate-01
+accumulatively	accumulate-01
+activity	act-02
+administrative	administrate-01
+advisory	advise-01
+afraid	fear-01
+alive	live-01
+anti	oppose-01
+anti	counter-01
+anti	destroy-01
+asleep	sleep-01
+attractive	attract-01
+aware	realize-01
+beneficial	benefit-01
+beloved	love-01
+coercive	coerce-01
+commendable	commend-01
+comparative	compare-01
+comparatively	compare-01
+competitive	compete-01
+compliant	comply-01
+compulsory	compel-01
+consensual	consent-01
+consequently	cause-01
+continual	continue-01
+continuous	continue-01
+contradictory	contradict-01
+cooperative	cooperate-01
+correspondence	correspond-01
+dead	die-01
+dead	kill-01
+deadly	kill-01
+destructive	destroy-01
+detectable	detect-01
+detestable	detest-01
+different	differ-02
+discriminatory	discriminate-02
+disgraceful	disgrace-01
+disputable	dispute-01
+dominant	dominate-01
+educational	educate-01
+eligible	qualify-02
+emphatically	emphasize-01
+expectantly	expect-01
+exploratory	explore-01
+famous	fame-01
+fearful	fear-01
+forceful	force-01
+foreseeable	foresee-01
+governmental	government-organization ARG0-of( govern-01 )ARG0-of
+hallucinatory	hallucinate-01
+half-life	have-half-life-01
+hungry	hunger-01
+imaginable	imagine-01
+impressive	impress-01
+inducible	induce-01
+inflammatory	inflame-01
+inhibitory	inhibit-01
+innovative	innovate-01
+intentional	intend-01
+intrigueing	intrigue-01
+investigative	investigate-01
+jobless	have-03 polarity( - )polarity ARG1( job )ARG1
+joblessness	have-03 polarity( - )polarity ARG1( job )ARG1
+justifiable	justify-01
+kidnapping	kidnap-01
+legislative	legislate-01
+measurable	measure-01
+metastatic	metastasize-101
+meritorious	merit-01
+migratory	migrate-01
+observational	observe-01
+operational	operate-01
+painful	pain-01
+painfully	pain-01
+peacekeeping	keep-01 ARG1( peace )ARG1
+precursory	precede-01
+predictive	predict-01
+preferential	prefer-01
+preparatory	prepare-02
+presumably	presume-02
+prevalent	prevail-02
+pro	favor-01
+proud	pride-01
+prosperous	prosper-01
+protective	protect-01
+provocative	provoke-01
+punishable	punish-01
+putative	think-01
+rebellious	rebel-01
+rebuttal	rebut-01
+recombinant	recombine-01
+regulatory	regulate-01
+renewable	renew-01
+repeatedly	repeat-01
+repressive	repress-01
+resentful	resent-01
+respectful	respect-01
+retaliatory	retaliate-01
+rusty	rust-01
+seemingly	seem-01
+senseless	sense-02 polarity( - )polarity
+similar	resemble-01
+similarity	resemble-01
+stagnant	stagnate-01
+successful	succeed-01
+sufficient	suffice-01
+surprisingly	surprise-01
+taxable	tax-01
+thirsty	thirst-01
+traceable	trace-02
+transcriptional	transcribe-01
+transferrable	transfer-01
+unbiased	bias-01 polarity( - )polarity
+unburdened	burden-01 polarity( - )polarity
+uncensored	censor-01 polarity( - )polarity
+unconfirmed	confirm-01 polarity( - )polarity
+undecided	decide-01 polarity( - )polarity
+understandable	understand-01
+undocumented	document-01 polarity( - )polarity
+unedited	edit-01 polarity( - )polarity
+unemployed	employ-01 polarity( - )polarity
+unexplored	explore-01 polarity( - )polarity
+unforeseen	foresee-01 polarity( - )polarity
+unfulfilled	fulfill-01 polarity( - )polarity
+unhindered	hinder-01 polarity( - )polarity
+unimpeded	impede-01 polarity( - )polarity
+unmaintained	maintain-01 polarity( - )polarity
+unmodified	modify-01 polarity( - )polarity
+unnamed	name-01 polarity( - )polarity
+unrealized	realize-02 polarity( - )polarity
+unrelenting	relent-01 polarity( - )polarity
+unsolved	solve-01 polarity( - )polarity
+unspecified	specify-01 polarity( - )polarity
+unsurpassed	surpass-01 polarity( - )polarity
+unswayed	sway-02 polarity( - )polarity
+untreated	treat-03 polarity( - )polarity
+untreated	treat-04 polarity( - )polarity
+voluntary	volunteer-01
+willing	will-02
+wishful	wish-01
+continually	continue-01
+increasingly	increase-01
+overwhelmingly	overwhelm-01
+reportedly	report-01
+abrogation	abrogate-01
+absolution	absolve-01
+abstentia	absent-01
+acetylation	acetylate-01
+ad	advertise-01
+adherence	adhere-02
+adhesion	adhere-01
+administration	administrate-01
+amination	aminate-01
+apparition	appear-01
+approval	approve-01
+acquittal	acquit-01
+annoyance	annoy-01
+apparent	appear-02
+apprehension	apprehend-01
+advocacy	advocate-01
+aspiration	aspire-01
+attention	attend-02
+baptism	baptize-01
+behavior	behave-01
+bequest	bequeath-01
+betrayal	betray-01
+blessing	bless-01
+blockage	block-01
+bombing	bomb-01
+breakaway	break-away-14
+breakdown	break-down-11
+breakdown	break-down-12
+breakthrough	break-through-26
+breakup	break-up-08
+burglary	burglarize-01
+coexistence	coexist-01
+competition	compete-01
+construction	construct-01
+conversion	convert-01
+cooperation	cooperate-01
+crackdown	crack-down-06
+creation	create-01
+deacetylation	deacetylate-01
+deceit	deceive-01
+decryption	decrypt-00
+defence	defend-01
+defense	defend-01
+demethylation	demethylate-01
+dependence	depend-01
+dependency	depend-01
+dephosphorylation	dephosphorylate-01
+descent	descend-01
+desperation	despair-01
+destruction	destroy-01
+detention	detain-01
+devaluation	devalue-01
+development	develop-01
+development	develop-02
+dimerization	dimerize-01
+disarmament	disarm-01
+dissatisfation	dissatisfy-01
+dominance	dominate-01
+downregulation	downregulate-01
+dysregulation	dysregulate-01
+dysregulation	regulate-01
+exclamation	exclaim-01
+election	elect-01
+elimination	eliminate-01
+encryption	encrypt-01
+espionage	spy-01
+expectation	expect-01
+failure	fail-01
+familiar	familiarize-01
+flight	fly-01
+flight	flee-01
+forgiveness	forgive-01
+fraud	defraud-01
+globalization	globalize-01
+habitation	inhabit-01
+hesitancy	hesitate-01
+heterodimerization	heterodimerize-01
+hijacking	hijack-01
+homodimerization	homodimerize-01
+hydrolysis	hydrolyze-01
+hypomethylation	methylate-01
+infection	infect-01
+intention	intend-01
+invitation	invite-01
+isomerization	isomerize-01
+launching	launch-01
+lawsuit	sue-02
+layoff	lay-off-02
+liberation	liberate-01
+meeting	meet-03
+methylation	methylate-01
+misunderstanding	misunderstand-01
+negligence	neglect-01
+opposition	oppose-01
+ouster	oust-01
+overexpression	overexpress-01
+perseverance	persevere-01
+phosphorylation	phosphorylate-01
+prayer	pray-01
+pretense	pretend-01
+prosecution	prosecute-01
+prosperity	prosper-01
+radiance	radiate-01
+radiation	radiate-01
+reactivation	reactivate-01
+reconciliation	reconcile-01
+reconstruction	reconstruct-01
+reelection	reelect-01
+regulation	regulate-01
+reintegration	reintegrate-01
+repression	repress-01
+reunification	re-unify-01
+reverence	revere-01
+robbery	rob-01
+starvation	starve-01
+subjugation	subjugate-01
+subversion	subvert-01
+suppression	suppress-01
+surveillance	surveil-01
+synthesis	synthesize-01
+takeoff	take-off-19
+takeover	take-over-12
+theft	steal-01
+transaction	transact-01
+transcription	transcribe-01
+transfection	transfect-01
+translocation	translocate-01
+ubiquitination	ubiquitinate-01
+uprising	rise-up-00
+upregulation	upregulate-01
+weaponization	weaponize-01
+warmongering	warmonger-01
+viewing	view-01
+victory	win-01
+vision	see-01
+vision	envision-01
+visit	visit-01
+abuser	person ARG0-of( abuse-01 )ARG0-of
+activator	thing ARG0-of( activate-01 )ARG0-of
+actor	person ARG0-of( act-01 )ARG0-of
+actress	person ARG0-of( act-01 )ARG0-of
+administration	government-organization ARG0-of( administrate-01 )ARG0-of
+administration	organization ARG0-of( administrate-01 )ARG0-of
+administrator	person ARG0-of( administrate-01 )ARG0-of
+admirer	person ARG0-of( admire-01 )ARG0-of
+advertiser	company ARG0-of( advertise-01 )ARG0-of
+advertiser	person ARG0-of( advertise-01 )ARG0-of
+adviser	person ARG0-of( advise-01 )ARG0-of
+advisor	person ARG0-of( advise-01 )ARG0-of
+analyst	person ARG0-of( analyze-01 )ARG0-of
+announcer	person ARG0-of( announce-01 )ARG0-of
+applicant	person ARG0-of( apply-01 )ARG0-of
+arbitrator	person ARG0-of( arbitrate-01 )ARG0-of
+assailant	person ARG0-of( assail-01 )ARG0-of
+assassin	person ARG0-of( assassinate-01 )ARG0-of
+assistant	person ARG0-of( assist-01 )ARG0-of
+attacker	person ARG0-of( attack-01 )ARG0-of
+attendee	person ARG0-of( attend-01 )ARG0-of
+auditor	person ARG0-of( audit-01 )ARG0-of
+author	person ARG0-of( author-01 )ARG0-of
+baker	person ARG0-of( bake-01 )ARG0-of
+beggar	person ARG0-of( beg-01 )ARG0-of
+believer	person ARG0-of( believe-01 )ARG0-of
+bidder	person ARG0-of( bid-01 )ARG0-of
+blogger	person ARG0-of( blog-01 )ARG0-of
+bomber	aircraft ARG0-of( bomb-01 )ARG0-of
+booster	person ARG0-of( boost-01 )ARG0-of
+broadcaster	company ARG0-of( broadcast-01 )ARG0-of
+buyer	person ARG0-of( buy-01 )ARG0-of
+campaigner	person ARG0-of( campaign-01 )ARG0-of
+capitulator	person ARG0-of( capitulate-01 )ARG0-of
+coach	person ARG0-of( coach-01 )ARG0-of
+combatant	person ARG0-of( combat-01 )ARG0-of
+competitor	person ARG0-of( compete-01 )ARG0-of
+competitor	person ARG0-of( compete-02 )ARG0-of
+composer	person ARG0-of( compose-02 )ARG0-of
+commuter	person ARG0-of( commute-01 )ARG0-of
+consultant	person ARG0-of( consult-01 )ARG0-of
+consumer	person ARG0-of( consume-01 )ARG0-of
+contributor	person ARG0-of( contribute-01 )ARG0-of
+controller	person ARG0-of( control-01 )ARG0-of
+creator	person ARG0-of( create-01 )ARG0-of
+critic	person ARG0-of( criticize-01 )ARG0-of
+critic	person ARG0-of( criticism-04 )ARG0-of
+dealer	person ARG0-of( deal-01 )ARG0-of
+dealer	person ARG0-of( deal-02 )ARG0-of
+dancer	person ARG0-of( dance-01 )ARG0-of
+defender	person ARG0-of( defend-01 )ARG0-of
+demonstrator	person ARG0-of( demonstrate-01 )ARG0-of
+designer	person ARG0-of( design-01 )ARG0-of
+deterrent	thing ARG0-of( deter-01 )ARG0-of
+detector	product ARG0-of( detect-01 )ARG0-of
+developer	person ARG0-of( develop-02 )ARG0-of
+devotee	person ARG0-of( devote-01 )ARG0-of
+digger	person ARG0-of( dig-01 )ARG0-of
+distributor	person ARG0-of( distribute-01 )ARG0-of
+donor	person ARG0-of( donate-01 )ARG0-of
+drafter	person ARG0-of( draft-01 )ARG0-of
+drinker	person ARG0-of( drink-01 )ARG0-of
+driver	person ARG0-of( drive-01 )ARG0-of
+eater	person ARG0-of( eat-01 )ARG0-of
+embalmer	person ARG0-of( embalm-01 )ARG0-of
+employer	organization ARG0-of( employ-01 )ARG0-of
+employer	company ARG0-of( employ-01 )ARG0-of
+employer	person ARG0-of( employ-01 )ARG0-of
+enabler	person ARG0-of( enable-01 )ARG0-of
+entertainer	person ARG0-of( entertain-01 )ARG0-of
+evaluator	person ARG0-of( evaluate-01 )ARG0-of
+explorer	person ARG0-of( explore-01 )ARG0-of
+exporter	person ARG0-of( export-01 )ARG0-of
+exporter	company ARG0-of( export-01 )ARG0-of
+extortionist	person ARG0-of( extort-01 )ARG0-of
+farmer	person ARG0-of( farm-01 )ARG0-of
+fertiliser	thing ARG0-of( fertilize-01 )ARG0-of
+fertilizer	thing ARG0-of( fertilize-01 )ARG0-of
+fighter	aircraft ARG0-of( fight-01 )ARG0-of
+fighter	person ARG0-of( fight-01 )ARG0-of
+filter	product ARG0-of( filter-01 )ARG0-of
+financer	person ARG0-of( finance-01 )ARG0-of
+financier	person ARG0-of( finance-01 )ARG0-of
+fisherman	person ARG0-of( fish-01 )ARG0-of
+follower	person ARG0-of( follow-02 )ARG0-of
+founder	person ARG0-of( found-01 )ARG0-of
+government	government-organization ARG0-of( govern-01 )ARG0-of
+hacker	person ARG0-of( hack-04 )ARG0-of
+hater	person ARG0-of( hate-01 )ARG0-of
+hijacker	person ARG0-of( hijack-01 )ARG0-of
+hitter	person ARG0-of( hit-01 )ARG0-of
+holder	person ARG0-of( hold-01 )ARG0-of
+hugger	person ARG0-of( hug-01 )ARG0-of
+hunter	person ARG0-of( hunt-01 )ARG0-of
+immigrant	person ARG0-of( immigrate-01 )ARG0-of
+incentive	thing ARG0-of( incentivize-01 )ARG0-of
+incinerator	facility ARG0-of( incinerate-01 )ARG0-of
+indicator	thing ARG0-of( indicate-01 )ARG0-of
+infiltrator	person ARG0-of( infiltrate-01 )ARG0-of
+inhabitant	person ARG0-of( inhabit-01 )ARG0-of
+inhibitor	thing ARG0-of( inhibit-01 )ARG0-of
+inspector	person ARG0-of( inspect-01 )ARG0-of
+insurer	person ARG0-of( insure-02 )ARG0-of
+interpreter	person ARG0-of( interpret-01 )ARG0-of
+interrogator	person ARG0-of( interrogate-01 )ARG0-of
+inventor	person ARG0-of( invent-01 )ARG0-of
+investigator	person ARG0-of( investigate-01 )ARG0-of
+investor	person ARG0-of( invest-01 )ARG0-of
+jogger	person ARG0-of( jog-01 )ARG0-of
+judge	person ARG0-of( judge-01 )ARG0-of
+kidnapper	person ARG0-of( kidnap-01 )ARG0-of
+killer	person ARG0-of( kill-01 )ARG0-of
+laborer	person ARG0-of( labor-01 )ARG0-of
+launcher	product ARG0-of( launch-01 )ARG0-of
+lawmaker	person ARG0-of( legislate-01 )ARG0-of
+leader	person ARG0-of( lead-01 )ARG0-of
+leader	person ARG0-of( lead-02 )ARG0-of
+leaker	person ARG0-of( leak-01 )ARG0-of
+legislator	person ARG0-of( legislate-01 )ARG0-of
+legislature	government-organization ARG0-of( legislate-01 )ARG0-of
+lender	person ARG0-of( lend-01 )ARG0-of
+lender	company ARG0-of( lend-01 )ARG0-of
+liar	person ARG0-of( lie-08 )ARG0-of
+lobbyist	person ARG0-of( lobby-01 )ARG0-of
+loser	person ARG0-of( lose-03 )ARG0-of
+maker	company ARG0-of( make-01 )ARG0-of
+maker	person ARG0-of( make-01 )ARG0-of
+manager	person ARG0-of( manage-01 )ARG0-of
+manufacturer	company ARG0-of( manufacture-01 )ARG0-of
+mediator	person ARG0-of( mediate-01 )ARG0-of
+merchant	person ARG0-of( merchandise-01 )ARG0-of
+migrant	person ARG0-of( migrate-01 )ARG0-of
+miner	person ARG0-of( mine-01 )ARG0-of
+murderer	person ARG0-of( murder-01 )ARG0-of
+negotiator	person ARG0-of( negotiate-01 )ARG0-of
+observer	person ARG0-of( observe-01 )ARG0-of
+occupant	person ARG0-of( occupy-01 )ARG0-of
+offender	person ARG0-of( offend-01 )ARG0-of
+operator	person ARG0-of( operate-01 )ARG0-of
+opponent	person ARG0-of( oppose-01 )ARG0-of
+organiser	person ARG0-of( organize-01 )ARG0-of
+organizer	person ARG0-of( organize-01 )ARG0-of
+owner	person ARG0-of( own-01 )ARG0-of
+painter	person ARG0-of( paint-01 )ARG0-of
+painter	person ARG0-of( paint-02 )ARG0-of
+participant	person ARG0-of( participate-01 )ARG0-of
+passerby	person ARG0-of( pass-by-17 )ARG0-of
+payer	person ARG0-of( pay-01 )ARG0-of
+performer	person ARG0-of( perform-01 )ARG0-of
+perpetrator	person ARG0-of( perpetrate-01 )ARG0-of
+planner	person ARG0-of( plan-01 )ARG0-of
+player	person ARG0-of( play-01 )ARG0-of
+preacher	person ARG0-of( preach-01 )ARG0-of
+producer	person ARG0-of( produce-01 )ARG0-of
+promoter	molecular-physical-entity ARG0-of( promote-01 )ARG0-of
+prosecutor	person ARG0-of( prosecute-01 )ARG0-of
+protester	person ARG0-of( protest-01 )ARG0-of
+provider	company ARG0-of( provide-01 )ARG0-of
+refinery	facility ARG0-of( refine-01 )ARG0-of
+reformer	person ARG0-of( reform-01 )ARG0-of
+publisher	company ARG0-of( publish-01 )ARG0-of
+rapist	person ARG0-of( rape-01 )ARG0-of
+rapper	person ARG0-of( rap-02 )ARG0-of
+reader	person ARG0-of( read-01 )ARG0-of
+recipient	thing ARG0-of( receive-01 )ARG0-of
+regulator	organization ARG0-of( regulate-01 )ARG0-of
+regulator	person ARG0-of( regulate-01 )ARG0-of
+reporter	person ARG0-of( report-01 )ARG0-of
+representative	person ARG0-of( represent-01 )ARG0-of
+repressor	protein ARG0-of( repress-01 )ARG0-of
+researcher	person ARG0-of( research-01 )ARG0-of
+resident	person ARG0-of( reside-01 )ARG0-of
+reviewer	person ARG0-of( review-02 )ARG0-of
+retiree	person ARG0-of( retire-01 )ARG0-of
+robber	person ARG0-of( rob-01 )ARG0-of
+runner	person ARG0-of( run-02 )ARG0-of
+sailor	person ARG0-of( sail-01 )ARG0-of
+seeker	person ARG0-of( seek-01 )ARG0-of
+seller	person ARG0-of( sell-01 )ARG0-of
+servant	person ARG0-of( serve-01 )ARG0-of
+servant	person ARG0-of( serve-02 )ARG0-of
+shooter	person ARG0-of( shoot-02 )ARG0-of
+signatory	country ARG0-of( sign-02 )ARG0-of
+singer	person ARG0-of( sing-01 )ARG0-of
+smoker	person ARG0-of( smoke-02 )ARG0-of
+smuggler	person ARG0-of( smuggle-01 )ARG0-of
+speaker	person ARG0-of( speak-01 )ARG0-of
+specialist	person ARG0-of( specialize-01 )ARG0-of
+speculator	person ARG0-of( speculate-01 )ARG0-of
+spy	person ARG0-of( spy-01 )ARG0-of
+squatter	person ARG0-of( squat-02 )ARG0-of
+strategist	person ARG0-of( strategize-01 )ARG0-of
+striker	person ARG0-of( strike-01 )ARG0-of
+striker	person ARG0-of( strike-02 )ARG0-of
+student	person ARG0-of( study-01 )ARG0-of
+subscriber	person ARG0-of( subscribe-01 )ARG0-of
+sufferer	person ARG0-of( suffer-01 )ARG0-of
+supervisor	person ARG0-of( supervise-01 )ARG0-of
+supplier	country ARG0-of( supply-01 )ARG0-of
+supplier	company ARG0-of( supply-01 )ARG0-of
+supporter	person ARG0-of( support-01 )ARG0-of
+surgeon	person ARG0-of( surgery-01 )ARG0-of
+survivor	person ARG0-of( survive-01 )ARG0-of
+survivor	person ARG0-of( survive-02 )ARG0-of
+sympathizer	person ARG0-of( sympathize-01 )ARG0-of
+teacher	person ARG0-of( teach-01 )ARG0-of
+thief	person ARG0-of( steal-01 )ARG0-of
+tippler	person ARG0-of( tipple-01 )ARG0-of
+thrower	person ARG0-of( throw-01 )ARG0-of
+tourist	person ARG0-of( tour-01 )ARG0-of
+trader	person ARG0-of( trade-01 )ARG0-of
+trader	company ARG0-of( trade-01 )ARG0-of
+traitor	person ARG0-of( betray-01 )ARG0-of
+trafficker	person ARG0-of( traffic-01 )ARG0-of
+transferor	person ARG0-of( transfer-01 )ARG0-of
+translator	person ARG0-of( translate-01 )ARG0-of
+traveler	person ARG0-of( travel-01 )ARG0-of
+traveller	person ARG0-of( travel-01 )ARG0-of
+user	person ARG0-of( use-01 )ARG0-of
+vendor	company ARG0-of( vend-01 )ARG0-of
+vendor	person ARG0-of( vend-01 )ARG0-of
+victor	person ARG0-of( win-01 )ARG0-of
+visitor	person ARG0-of( visit-01 )ARG0-of
+voter	person ARG0-of( vote-01 )ARG0-of
+waiver	thing ARG0-of( waive-01 )ARG0-of
+winner	person ARG0-of( win-01 )ARG0-of
+wiper	thing ARG0-of( wipe-01 )ARG0-of
+worker	person ARG0-of( work-01 )ARG0-of
+writer	person ARG0-of( write-01 )ARG0-of
+beekeeper	person ARG0-of( keep-01 )ARG0-of ARG1( bee )ARG1
+filmmaker	person ARG0-of( make-01 )ARG0-of ARG1( film )ARG1
+firefighter	person ARG0-of( fight-01 )ARG0-of ARG1( fire )ARG1
+lamplighter	person ARG0-of( light-04 )ARG0-of ARG1( lamp )ARG1
+landowner	person ARG0-of( own-01 )ARG0-of ARG1( land )ARG1
+peacekeeper	person ARG0-of( keep-01 )ARG0-of ARG1( peace )ARG1
+playwright	person ARG0-of( write-01 )ARG0-of ARG1( play )ARG1
+songwriter	person ARG0-of( write-01 )ARG0-of ARG1( song )ARG1
+taxpayer	person ARG0-of( pay-01 )ARG0-of ARG1( tax )ARG1
+watchmaker	person ARG0-of( make-01 )ARG0-of ARG1( watch )ARG1
+bassist	person ARG0-of( play-11 )ARG0-of ARG2( bass )ARG2
+bassoonist	person ARG0-of( play-11 )ARG0-of ARG2( bassoon )ARG2
+cellist	person ARG0-of( play-11 )ARG0-of ARG2( cello )ARG2
+clarinetist	person ARG0-of( play-11 )ARG0-of ARG2( clarinet )ARG2
+drummer	person ARG0-of( play-11 )ARG0-of ARG2( drum )ARG2
+flautist	person ARG0-of( play-11 )ARG0-of ARG2( flute )ARG2
+flutist	person ARG0-of( play-11 )ARG0-of ARG2( flute )ARG2
+hornist	person ARG0-of( play-11 )ARG0-of ARG2( horn )ARG2
+oboist	person ARG0-of( play-11 )ARG0-of ARG2( oboe )ARG2
+organist	person ARG0-of( play-11 )ARG0-of ARG2( organ )ARG2
+percussionist	person ARG0-of( play-11 )ARG0-of ARG2( percussion )ARG2
+pianist	person ARG0-of( play-11 )ARG0-of ARG2( piano )ARG2
+trombonist	person ARG0-of( play-11 )ARG0-of ARG2( trombone )ARG2
+trumpeter	person ARG0-of( play-11 )ARG0-of ARG2( trumpet )ARG2
+violinist	person ARG0-of( play-11 )ARG0-of ARG2( violin )ARG2
+violist	person ARG0-of( play-11 )ARG0-of ARG2( viola )ARG2
+defendant	person ARG1-of( defend-01 )ARG1-of
+drawing	picture ARG1-of( draw-01 )ARG1-of
+employee	person ARG1-of( employ-01 )ARG1-of
+expenditure	thing ARG1-of( expend-01 )ARG1-of
+expense	thing ARG1-of( expend-01 )ARG1-of
+hypotheses	thing ARG1-of( hypothesize-01 )ARG1-of
+hypothesis	thing ARG1-of( hypothesize-01 )ARG1-of
+intent	thing ARG1-of( intend-01 )ARG1-of
+nominee	thing ARG1-of( nominate-01 )ARG1-of
+opinion	thing ARG1-of( opine-01 )ARG1-of
+painting	picture ARG1-of( paint-02 )ARG1-of
+prisoner	person ARG1-of( imprison-01 )ARG1-of
+suggestion	thing ARG1-of( suggest-01 )ARG1-of
+surrounding	location ARG1-of( surround-01 )ARG1-of
+symbol	thing ARG1-of( symbolize-01 )ARG1-of
+transferee	person ARG1-of( transfer-01 )ARG1-of
+victim	person ARG1-of( victimize-01 )ARG1-of
+yield	thing ARG1-of( yield-03 )ARG1-of
+blessing	thing ARG2-of( bless-01 )ARG2-of
+evacuee	person ARG2-of( evacuate-01 )ARG2-of
+justification	thing ARG2-of( justify-01 )ARG2-of
+summary	thing ARG2-of( summarize-01 )ARG2-of
+medicine	thing ARG2-of( medicate-01 )ARG2-of
+product	thing ARG1-of( produce-01 )ARG1-of 
+ruler	person ARG0-of( rule-03 )ARG0-of
+starter	person ARG0-of( start-01 )ARG0-of
+capability	capable-01
+freedom	free-04
+illness	ill-01
+responsibility	responsible-01
+safety	safe-01
+shortage	short-06
+strength	strong-02
+sweetness	sweet-04
+sweetness	sweet-05

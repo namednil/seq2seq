@@ -1,0 +1,1 @@
+cat verbalization-list-v1.06.txt| sed -E "s/:([-A-Za-z0-9]+)\s*([-a-zA-Z0-9]+)/\1( \2 )\1/g" | sed -E "s/^[-A-Z]+ //" | sed -E "s/ TO /\t/" | grep -vE "^#" > verbalisation_dict.txt

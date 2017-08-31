@@ -36,6 +36,13 @@ import re
 #regex for ignoring non-word AMR tokens in the copying mechanism
 RE_IGNORE = re.compile("\)?--[a-z]+--\(?")
 
+#load verbalization list from https://amr.isi.edu/download.html:
+verbalization_dict = dict()
+with open("verbalisation_dict.txt") as f:
+    for l in f:
+        lemma, verbalization = l.strip().split("\t")
+        verbalization_dict[lemma]=verbalization
+
 def _get_prediction_length(predictions_dict):
   """Returns the length of the prediction based on the index
   of the first SEQUENCE_END token.
@@ -93,10 +100,12 @@ def _unk_replace(source_tokens,
   result = []
   for token, scores in zip(predicted_tokens, attention_scores):
     if token == "UNK":
-      #max_score_index = np.argmax(scores)
+      #max_score_index = np.argmax(scores) #original line
       max_score_index = mod_argmax(source_tokens,scores,RE_IGNORE)
       chosen_source_token = source_tokens[max_score_index]
-      new_target = ps.lemmatize(chosen_source_token)+"-0" #hack to automaticall use sense 0
+      new_target = ps.lemmatize(chosen_source_token)
+      if new_target in verbalization_dict:
+          new_target = verbalization_dict[new_target]
       print("new_target:",new_target)
       if mapping is not None and chosen_source_token in mapping:
         new_target = mapping[chosen_source_token]
