@@ -31,10 +31,32 @@ from tensorflow import gfile
 from seq2seq.tasks.inference_task import InferenceTask, unbatch_dict
 
 import nltk.stem.wordnet
+from nltk.corpus import wordnet
+from nltk import pos_tag
 import re
+
 
 #regex for ignoring non-word AMR tokens in the copying mechanism
 RE_IGNORE = re.compile("\)?--[a-z]+--\(?")
+
+lemmatizer = nltk.stem.wordnet.WordNetLemmatizer()
+def get_wordnet_pos(treebank_tag):
+    """Convert POS tag to wordnet POS tag"""
+    
+    if treebank_tag.startswith('J'):
+        return wordnet.ADJ
+    elif treebank_tag.startswith('V'):
+        return wordnet.VERB
+    elif treebank_tag.startswith('N'):
+        return wordnet.NOUN
+    elif treebank_tag.startswith('R'):
+        return wordnet.ADV
+    else:
+        return ''
+def wordnettagg(wordlist):
+    tags = postag(wordlist)
+    for w,tag in tags:
+        yield get_wordnet_pos(tag)
 
 #load verbalization list from https://amr.isi.edu/download.html:
 verbalization_dict = dict()
@@ -96,14 +118,17 @@ def _unk_replace(source_tokens,
   Returns:
     A new `predicted_tokens` array.
   """
-  ps = nltk.stem.wordnet.WordNetLemmatizer()
+  
   result = []
+  wntags = list(wordnettagg(source_tokens))
   for token, scores in zip(predicted_tokens, attention_scores):
     if token == "UNK":
       #max_score_index = np.argmax(scores) #original line
       max_score_index = mod_argmax(source_tokens,scores,RE_IGNORE)
       chosen_source_token = source_tokens[max_score_index]
-      new_target = ps.lemmatize(chosen_source_token)
+      chosen_source_tag = wntags[max_score_index]
+      new_target = lemmatizer.lemmatize(chosen_source_token,chosen_source_tag)
+      print("chosen",chosen_source_token,"TAG: ",chosen_source_tag,new_target)
       if new_target in verbalization_dict:
           new_target = verbalization_dict[new_target]
       print("new_target:",new_target)
