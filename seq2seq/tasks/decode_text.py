@@ -52,8 +52,13 @@ def get_wordnet_pos(treebank_tag):
     elif treebank_tag.startswith('R'):
         return wordnet.ADV
     else:
-        return ''
+        return wordnet.NOUN #apparently that's the default case we have to go to
 def wordnettagg(wordlist):
+    wordlist = list(wordlist.flatten())
+    try:
+       wordlist = wordlist[:wordlist.index("")-1]
+    except ValueError: #there is no empty string in the list
+       pass 
     tags = pos_tag(wordlist)
     for w,tag in tags:
         yield get_wordnet_pos(tag)
@@ -128,10 +133,10 @@ def _unk_replace(source_tokens,
       chosen_source_token = source_tokens[max_score_index]
       chosen_source_tag = wntags[max_score_index]
       new_target = lemmatizer.lemmatize(chosen_source_token,chosen_source_tag)
-      print("chosen",chosen_source_token,"TAG: ",chosen_source_tag,new_target)
+      #print("chosen",chosen_source_token,"TAG: ",chosen_source_tag,new_target)
       if new_target in verbalization_dict:
           new_target = verbalization_dict[new_target]
-      print("new_target:",new_target)
+      #print("new_target:",new_target)
       if mapping is not None and chosen_source_token in mapping:
         new_target = mapping[chosen_source_token]
       result.append(new_target)
