@@ -136,6 +136,8 @@ def _unk_replace(source_tokens,
       #print("chosen",chosen_source_token,"TAG: ",chosen_source_tag,new_target)
       if new_target in verbalization_dict:
           new_target = verbalization_dict[new_target]
+      else:
+          new_target += "-01"
       #print("new_target:",new_target)
       if mapping is not None and chosen_source_token in mapping:
         new_target = mapping[chosen_source_token]
